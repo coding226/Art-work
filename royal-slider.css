@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  background-color: #000;
+  padding-top: 5em;
+}
+
+.contentSlider {
+  width: 100%;
+  padding-top: 5em;
+}
+.contentSlider,
+.contentSlider .rsOverflow,
+.contentSlider .rsSlide,
+.contentSlider .rsVideoFrameHolder,
+.contentSlider .rsThumbs {
+  background: #eee;
+  color: #000;
+}
+
+.contentSlider .rsSlide,
+.contentSlider .rsOverflow {
+  background: #eee;
+}
+.contentSlider h3 {
+  font-size: 24px;
+  line-height: 31px;
+  margin: 12px 0 8px;
+  font-weight: bold;
+}
+.contentSlider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.content-slider-bg {
+  width: 86%;
+  padding: 24px 7%;
+  background: #eee;
+}
+

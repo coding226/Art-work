@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    color: #ffff;
+    
+}
+.navbar {
+    font-size: 18px;
+    background-color: black;
+    /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%); */
+    /* border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px; */
+  }  
+ .main-nav {
+    list-style-type: none;
+    display: none;
+}
+ .nav-links,
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+    /* color: rgba(255, 255, 255, 0.7); */
+} 
+
+    .main-nav a:hover {
+        border-bottom: 2px solid #ff0000;
+      
+       } 
+      
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+ .active {
+    display: block;
+  }
+  
+
+  /* This is the start of the CSS Grid code. */
+
+  .wrapper {
+      display: grid;
+      height: 100vh;
+     background-color: #000000;
+      grid-template-rows: 100px 1fr 150px;
+      grid-template-columns: repeat (4, 1fr );
+     
+      /* grid-gap: 10px; */
+  }
+
+  .navbar {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+  }
+
+  main {
+      grid-column: 1 / 5;
+      grid-row: 2 / 3;
+
+      /* height: 100%; */
+      /* height: fit-content; */
+      /* overflow: hidden; */
+      /* padding: 0;
+      margin: 0; */
+      
+     
+  }
+
+ 
+
+ .tagline {
+     position: relative;
+     bottom: 250px;
+  
+  
+} 
+
+
+section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    color: #ffffff;
+   
+}
+    .tagline button {
+      background-color: #f10505; /* Green */
+      border: 2px solid #ffffff;
+      border-radius: 15%;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 75px;
+    
+  
+  }
+
+     .foot {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px; 
+      
+    }
+   
+ 
+ 
+  .mainContent img  {
+    
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    
+}  
+
+
+.footer {
+    clear: both;
+    max-height: 2;
+    transition: max-height .2s ease-out;
+    padding: 5px 5px;
+    background-color:black;
+    color: white;
+    font-size: 25px;
+  
+  }
+    .fa {
+      padding: 0px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 5px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+        color: red;
+    }
+    
+    .fa-facebook {
+      background: #000000;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #000000;
+      color: white;
+    }
+    
+    .fa-linkedin {
+      background: #000000;
+      color: white;
+    } 
+
+    .fa-instagram {
+      background: #000000;
+      color: white;
+    } 
+    
+  
+
+    
+  
+
+  @media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+   
+}
+
+/* My Media Query Test Section. */
+
+@media  screen and (max-width: 600px) {
+    .tagline h1 {
+     color: #ffff;
+     font-size: 2em;
+    }
+    .tagline {
+        position: absolute;
+       top: 25em;
+       left: 5em; 
+     
+   } 
+   
+   .tagline button {
+    display: none;
+  }
+
+  }
+
+
+  /* Button Testing! */
+
+  .testButton {
+    position: relative;
+    top: 70%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .testButton a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #ff0000;
+    /* border: 2px solid #333; */
+    border: 2px solid #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    /* background-color: #fff; */
+    background-color: #333;
+  }
+  
+  .testButton a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .testButton a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff0000;
+    transition: all .35s;
+  }
+  
+  .testButton a:hover{
+    color: #fff;
+   
+  }
+  
+  .testButton a:hover:after{
+    width: 100%;
+  }
