@@ -11,17 +11,17 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo"><img src="images/AuxesisArt_logo.png" width="150" alt=""></a>
+        <a href="index.php" class="logo"><img src="images/AuxesisArt_logo.png" width="150" alt=""></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="swiper.html">GALLERY</a></li>
-          <li><a href="bio.html">MY BIO</a></li>
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="swiper.php">GALLERY</a></li>
+          <li><a href="bio.php">MY BIO</a></li>
           <li><a href="webForm.php">CONTACT</a></li>
         </ul>
       </header>
-     <a href="swiper.html">
+     <a href="swiper.php">
       <button class="arrow left">
         <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
           <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
@@ -29,7 +29,7 @@
         </svg>  
       </button>
     </a>
-    <a href="swiper.html">
+    <a href="swiper.php">
       <button class="arrow right">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
           <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
@@ -46,7 +46,7 @@
         </figure>
 
         <figure class="gallery__item gallery__item--2">
-            <a href="http://localhost/AuxesisArt/home.html"> <h1>	Title: The Search <br>
+            <a href="http://localhost/AuxesisArt/home.php"> <h1>	Title: The Search <br>
                 Medium: Graphite on paper <br>
                 Size: 11”x14” <br>
                 Year: 2020

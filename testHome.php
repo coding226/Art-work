@@ -23,7 +23,7 @@
                 <a href="#" class="nav-links">HOME</a>
             </li>
             <li>
-                <a href="http://localhost/AuxesisArt/ImageGallery/gallery.html" class="nav-links">GALLERY</a>
+                <a href="http://localhost/AuxesisArt/ImageGallery/gallery.php" class="nav-links">GALLERY</a>
             </li>
             <li>
                 <a href="#" class="nav-links">MY BIO</a>
@@ -61,9 +61,9 @@ navBarToggle.addEventListener('click', function () {
         <img src="images/hero_1920.jpg" alt="">
         <section class="tagline">
             <h1>WHERE ARTISTRY DEVELOPS  <br> THROUGH DETAILS</h1>
-            <!-- <button class="hero-button" onclick="window.location='about.html'">GALLERY</button> -->
+            <!-- <button class="hero-button" onclick="window.location='about.php'">GALLERY</button> -->
             <div class="testButton">
-                <a href="about.html"><span>GALLERY</span></a>
+                <a href="about.php"><span>GALLERY</span></a>
               </div>
         </section>
     </main>

@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+  
+  a {
+    text-decoration: none;
+    
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .mainHeader {
+    text-align: center;
+    position: relative;
+    margin: 20px;
+  }
+  
+  .mainHeader img {
+    width: 70px;
+    height: auto;
+  }
+  
+  nav {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+  }
+  
+  nav ul {
+    padding: 0px;
+    display: inline-block;
+    margin: 0px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    display: block;
+    padding: 15px 40px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ffe9ec;
+    border-radius: 10px;
+  }
+  
+  #headerText {
+    color: #dea5a4;
+    font-size: 470%;
+    margin: 0 auto;
+  }
+  
+  #headerList {
+    display: inline;
+    text-align: center;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 70px;
+  }
+  
+  #photos img {
+    max-width: 32.2%;
+    float: left;
+    display: block;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  #photo-gallery {
+    list-style: none;
+    margin: 0px auto;
+    padding: 10px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  #invis {
+    color: white;
+  }
+  .about {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    width: 680px;
+    margin-left: 16%;
+  }
+  
+  .paragraph {
+    width: 680px;
+    margin: 0px auto;
+    text-align: justify;
+    padding: 0 30px;
+  }
+  
+  p {
+    margin-bottom: 34px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+  }
+  
+  #bottom {
+    margin: 90px auto;
+  }
+  .footer {
+    text-align: center;
+    background-color: #f3f3f3;
+    height: 80px;
+  }
+  .footer p {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 80px;
+    margin-bottom: 0;
+  }
+  .insta {
+    height: 15px;
+    width: auto;
+  }
+  /***********************************/
+  
+  /***********************************/
+  
+  /***********************************/
+  
+  /***********************************/
+  
+  /***********************************/
+  
+  /***********************************/
+  
+  
+  
+  body.lb-disable-scrolling {
+    overflow: hidden;
+  }
+  
+  .lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+  }
+  
+  .lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+  }
+  
+  .lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    border-radius: 3px;
+  }
+  
+  .lightbox a img {
+    border: none;
+  }
+  
+  .lb-outerContainer {
+    position: relative;
+    background-color: white;
+    *zoom: 1;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+  .lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .lb-container {
+    padding: 4px;
+  }
+  
+  .lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+  }
+  
+  .lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(https://raw.githubusercontent.com/lokesh/lightbox2/master/src/images/loading.gif)
+      no-repeat;
+  }
+  
+  .lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .lb-container > .nav {
+    left: 0;
+  }
+  
+  .lb-nav a {
+    outline: none;
+    background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
+  }
+  
+  .lb-prev,
+  .lb-next {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .lb-nav a.lb-prev {
+    width: 34%;
+    left: 0;
+    float: left;
+    background: url(https://raw.githubusercontent.com/lokesh/lightbox2/master/src/images/prev.png)
+      left 48% no-repeat;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  
+  .lb-nav a.lb-prev:hover {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  
+  .lb-nav a.lb-next {
+    width: 64%;
+    right: 0;
+    float: right;
+    background: url(https://raw.githubusercontent.com/lokesh/lightbox2/master/src/images/next.png)
+      right 48% no-repeat;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  
+  .lb-nav a.lb-next:hover {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  
+  .lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    *zoom: 1;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .lb-data {
+    padding: 0 4px;
+    color: #ccc;
+  }
+  .datatitle-first,.datatitle-second{
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .datatitle-second{
+      color:red;
+  }
+  .lb-data .lb-details {
+    width: 10%;
+    text-align: left;
+    line-height: 1.1em;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    padding: 50px;
+    background: #ffffff2b;
+    color: white;
+  }
+  
+  .lb-data .lb-caption {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+    
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+  }
+  
+  .lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    color: #999999;
+    padding-top: 20px;
+    font-size: 11px;
+    font-family: sans-serif;
+  }
+  
+  .lb-data .lb-close {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(https://raw.githubusercontent.com/lokesh/lightbox2/master/src/images/close.png)
+      top right no-repeat;
+    text-align: right;
+    outline: none;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    
+  }
+  
+  .lb-data .lb-close:hover {
+    cursor: pointer;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  
+  /***************email form************/
+  
+  #contact {
+    position: relative;
+    margin: 100px 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #block {
+    width: 680px;
+    margin: 50px auto 100px auto;
+  }
+  
+  input {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    width: 660px;
+    height: 50px;
+    padding: 0px 25px 0px 25px;
+  
+    border: 0;
+    border-bottom: solid 1px #dea5a4;
+  }
+  
+  textarea {
+    width: 660px;
+    height: 100px;
+    padding: 25px;
+  
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  
+    border: 0;
+  }
+  
+  #submit {
+    width: 731px;
+    background: #ffa09e;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+  
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: white;
+  
+    outline: none;
+  
+    border: solid 1px #ffd2d1;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: white;
+    background: #ffb8c8;
+  }
+  

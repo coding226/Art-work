@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8ff68c69b1.js" crossorigin="anonymous"></script>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
@@ -18,13 +19,13 @@
 <body>
 
 <header class="header">
-    <a href="" class="logo"><img src="images/AuxesisArt_logo.png" width="150" alt=""></a>
+    <a href="index.php" class="logo"><img src="images/AuxesisArt_logo.png" width="150" alt=""></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="swiper.html">GALLERY</a></li>
-      <li><a href="#careers">MY BIO</a></li>
+      <li><a href="index.php">HOME</a></li>
+      <li><a href="swiper.php">GALLERY</a></li>
+      <li><a href="bio.php">MY BIO</a></li>
       <li><a href="webForm.php">CONTACT</a></li>
     </ul>
   </header>
@@ -32,11 +33,12 @@
 
     <div class="container">
         <h1 class="brand"><span>Get</span>  in Touch</h1>
-            <div class="wrapper">
+            <div class="wrapper wrapper-2">
         <!-- <div class="company-info">
             <h1><span>Get</span> in Touch</h1>
         </div> -->
         <div class="contact">
+        
             <!-- <h1>Get in Touch</h1> -->
             <form action= "<?=$_SERVER['PHP_SELF']; ?>" method="POST">
                 <p>
@@ -60,11 +62,12 @@
                     <span class="error"><?= $phone_error ?></span>
                 </p>
                 <p class="full">
-                    <label for="">Message*</label>
+                    <label for="">Message</label>
                     <textarea name="message" value="<?= $message ?>" rows ='5' type="text" tabindex="5"  ></textarea>
                     
                 </p>
                 <p class="full">
+                    
                     <button>SEND</button>
                 </p>
                 <div class="success"><?= $success ?></div>

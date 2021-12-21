@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
       arrowsNav: false,
       fadeinLoadedSlide: false,
       controlNavigationSpacing: 0,
-      controlNavigation: 'tabs',
+      controlNavigation: 'bullets',
       imageScaleMode: 'none',
       imageAlignCenter:false,
       loop: false,

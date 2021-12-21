@@ -75,8 +75,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = 'Email From AuxesisArt.com';
        
         if (mail($to, $subject, $message_body)){
-          echo "<script>location='thankyou.html'</script>";
-          // header('Location: thankyou.html' );
+          echo "<script>location='thankyou.php'</script>";
+          // header('Location: thankyou.php' );
           $first_name = $last_name = $email = $phone = $message =  '';
            
          

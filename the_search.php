@@ -16,7 +16,7 @@
 
     <div class="wrapper">
         <figure class="gallery__item gallery__item--1">
-            <a href="http://localhost/AuxesisArt/home.html"><img src="ImageGallery/images_gallery/1_The_Search.jpg" width="250px" height="250px" class="gallery__img" alt="Image 1"></a>
+            <a href="http://localhost/AuxesisArt/home.php"><img src="ImageGallery/images_gallery/1_The_Search.jpg" width="250px" height="250px" class="gallery__img" alt="Image 1"></a>
           </figure>
           <div class="background_layer"></div>
           <section class="search_title">

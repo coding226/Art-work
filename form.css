@@ -5,6 +5,13 @@
     margin: 0;
 }
 
+body {
+
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #000000;
+}
 
 
 
@@ -49,10 +56,13 @@
   
   .header li a {
     display: block;
-    padding: 20px 20px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    /* padding: 20px 20px; */
     /* border-right: 1px solid #f4f4f4; */
     text-decoration: none;
     color: #ffffff;
+    margin-top: 25px;
   }
   
   .header li a:hover,
@@ -260,15 +270,19 @@ body {
     width: 50%;
     padding: 1em;
     border: 1px solid red;
+    
 }
 
+
 .contact form button {
-    width: 10%;
-    background: red;
-    border: 0;
-    color: white;
-    outline: 0;
-    
+  width: 15%;
+  /* height: 40%; */
+  padding: 10px;
+  background: red;
+  border: 0;
+  color: white;
+  outline: 0;
+  
 }
 
 .contact form textarea {
@@ -371,6 +385,7 @@ body {
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
+      
     }
 
     .contact form {
@@ -385,20 +400,44 @@ body {
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
+        position: relative;
+        bottom: 105px;
         
-    }
+       }
 
     .contact form {
         display: flex;
         flex-direction: column;
+        /* position: relative;
+        bottom: 95px; */
     }
 
  
+
+    /* .contact {
+      position: relative;
+      bottom: 95px;
+     
+    } */
+
     .container h1 {
-        /* padding-top: 0.5em; */
-        
-        font-size: 3em;
-    }
+     position: relative;
+      bottom: 105px; 
+      font-size: 3em;
+      
+      }
+     
+     /* .brand {
+       position: relative;
+      bottom: 55px;
+     } */
+
+    
+ 
+   
+      label {
+        padding-top: 20px;
+      }
 
     .header img {
         width: 150px;
@@ -407,6 +446,19 @@ body {
         padding: 0;
         margin: 0;
     }
+
+    
+.contact form button {
+  width: 40%;
+  /* height: 40%; */
+  padding: 10px;
+  background: red;
+  border: 0;
+  color: white;
+  outline: 0;
+  margin-top: 10px;
+  
+}
 
     }
   
